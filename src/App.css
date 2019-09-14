@@ -1,33 +1,110 @@
-.App {
-  text-align: center;
+.top-icon {
+  cursor: pointer;
+  font-size: 2.5em;
+  margin: 10px 0px 10px 10px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+
+.subtotal-row{
+  position:relative;
+  margin: 0px 15px;
+  min-height: 20%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.total-row{
+  position:relative;
+  margin: 0px 15px;
+  min-height: 25%;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 1.2em
 }
 
-.App-link {
-  color: #61dafb;
+.label {
+  float:left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.value {
+  float:right;
+}
+
+.subtotal-button-row{
+  position: relative;
+  margin: 0px 40px;
+  min-height: 35%;
+}
+
+#subtotal-container {
+  position: relative;
+  height: 55%;
+}
+
+
+#member-container {
+  position: relative;
+  min-height: 27%;
+  height: 27%;
+}
+
+#member {
+  min-height: 85%;
+  height: 85%;
+}
+
+#product-search {
+  position: relative;
+  min-height: 13%;
+}
+
+#product-search .input-group{
+  width: 95%;
+}
+
+#product-search input, button{
+  font-size: 0.9em;
+}
+
+#product-search button{
+  font-size: 0.9em;
+}
+
+#title {
+  background-color: #fff;
+  padding: 10px 0px;
+  min-width: 100%;
+  min-height: 11%;
+}
+
+#title-text {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+#title h1{
+  font-size: 1.3em;
+}
+
+#title h2{
+  padding-top: 5px;
+  font-size: 1em;
+}
+
+.logo {
+  max-height:55px;
+  height: auto;
+  border-radius: 4px;
+}
+
+#title .buttons {
+  padding:0px;
+}
+
+#main-content {
+  padding-top: 20px;
+  min-height: 89%;
+  height: 89%;
+}
+
+#additional-content {
+  padding: 0px 20px 0px 0px;
+  height: 100%;
 }

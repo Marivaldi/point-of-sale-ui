@@ -1,0 +1,107 @@
+.ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+header {
+  background-color: #FFF;
+  top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 5000;
+  border-bottom: solid 1px #D3D3D3;
+  padding: 10px 0px;
+  min-height: 32px;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+
+.header-col {
+  padding-top: 3px;
+  border-right: solid 1px #D3D3D3;
+}
+
+#basket {
+  position: absolute;
+  top:0;
+  color: #004040;
+  min-height: 80%;
+  max-height: 80%;
+  height: 80%;
+  min-width: 100%;
+  max-width: 100%;
+  width: 100%;
+}
+
+.basket-container {
+  font-size: 0.8em;
+  position: relative;
+  z-index: 4999;
+  width: 100%;
+  min-height: 100%;
+}
+
+#subtotal {
+  position:absolute;
+  min-height: 20%;
+  max-height: 20%;
+  min-width: 100%;
+  max-width: 100%;
+  bottom:0;
+}
+
+.larger-text{
+  position: absolute;
+  top: 50%;
+  font-size: 1.2em
+}
+
+.item-wrapper {
+  min-width: 100%;
+  border-bottom: solid 1px #D3D3D3;
+}
+
+.item-wrapper .main {
+  min-width: 100%;
+  min-height: 60px;
+  line-height: 60px;
+}
+.align-right{
+  text-align: right;
+}
+.item-wrapper .additional {
+  min-height: 20px;
+}
+
+.slide {
+  position: absolute;
+  left: -2000px;
+  -webkit-animation: slide 0.25s forwards;
+  -webkit-animation-delay: 0.25s;
+  animation: slide 0.25s forwards;
+  animation-delay: 0.25s;
+}
+
+@-webkit-keyframes slide {
+  100% { left: 0; position: relative}
+}
+
+@keyframes slide {
+  100% { left: 0; position: relative }
+}
+
+
+@media only screen and (min-width: 767.98px) {
+  #subtotal {
+    display: none;
+  }
+
+  #basket {
+    min-height: 95%;
+    max-height: 95%;
+    height: 95%;
+
+  }
+}
