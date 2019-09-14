@@ -10,7 +10,7 @@ class Title extends Component {
   }
   render() { 
     return (
-      <div id="title" className="row shadow-lg border-bottom">
+      <div id="title" className={"row shadow-lg border-bottom" + (this.props.blurred ? ' blur': '')}>
         <div className="col-1 hide-md">
           <img className="logo" alt="logo" src="https://www.thefirstteephoenix.org/wp-content/uploads/sites/25/2016/07/ncr-logo.jpg"/>
         </div> 
@@ -20,14 +20,20 @@ class Title extends Component {
             <h2>Scan or key an item</h2>
           </div>
           <div className="col-4 buttons">
-            <MdMenu onClick={this.open_menu.bind(this)} className="float-right top-icon "/>
+            <MdMenu onClick={this.open_menu.bind(this)} className="float-right top-icon clickable"/>
           </div> 
         </div>     
       </div>
     );
   }
 }
- 
+
+const mapStateToProps = state => {
+  return {
+    blurred: state.menu.visible
+  };
+};
+
 function mapDispatchToProps(dispatch) {
   return {
     open_menu: () => dispatch(open_menu())
@@ -35,6 +41,6 @@ function mapDispatchToProps(dispatch) {
 }
 
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps
 )(Title);

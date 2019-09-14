@@ -10,7 +10,7 @@ class Cart extends Component {
       return null;
     }
     return ( 
-      <div id="cart" className="row">
+      <div id="cart" className={"row" + (this.props.blurred ? ' blur': '')}>
         <Basket/>
         <div id="cart-aside" className="col-md-4 hide-md">
           <ProductSearch/>
@@ -24,7 +24,8 @@ class Cart extends Component {
  
 const mapStateToProps = state => {
   return {
-    visible: state.cart.visible
+    visible: state.cart.visible,
+    blurred: state.menu.visible
   };
 };
 

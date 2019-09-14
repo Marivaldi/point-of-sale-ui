@@ -6,8 +6,9 @@ class  Customer extends Component {
       <div id="member-container">
         <div id="member" className="card shadow center-vertically full-width">
           <div className="position-relative full-width full-height">
-            <div className="center">
-              <button type="button" class="btn btn-outline-primary">Add a member</button>
+            <div id="member-button-container" className="center">
+              <button type="button" class="member-button btn btn-outline-primary">Lookup a member</button>
+              <button type="button" class="member-button btn btn-outline-success">Add a member</button>
             </div>
           </div>
         </div>

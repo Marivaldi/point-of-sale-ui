@@ -1,0 +1,152 @@
+#menu-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  height: 100vh;
+  max-height: 100vh;
+  min-width: 100vw;
+  width: 100vw;
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+#menu-container.show{
+    /* for chrome and safari*/
+    -webkit-animation-duration: 0.50s;
+    -webkit-animation-name: slidein;
+  
+    /*for firefox*/
+    -moz-animation-duration: 0.50s;
+    -moz-animation-name: slidein;
+  
+      /* for opera*/
+    -o-animation-duration: 0.50s;
+    -o-animation-name: slidein;
+  
+      /* Standard syntax*/
+    animation-duration: 0.50s;
+    animation-name: slidein;
+}
+
+#menu-container.hide{
+  display: none;
+}
+
+@-webkit-keyframes slidein {
+  from {
+      margin-left: 100%;
+  }
+
+  to {
+      margin-left: 0%;
+  }
+}
+
+@-moz-keyframes slidein {
+  from {
+      margin-left: 100%;
+  }
+
+  to {
+      margin-left: 0%;
+  }
+}
+@-o-keyframes slidein {
+  from {
+      margin-left: 100%;
+  }
+
+  to {
+      margin-left: 0%;
+  }
+}
+@keyframes slidein {
+  from {
+      margin-left: 100%;
+  }
+
+  to {
+      margin-left: 0%;
+  }
+}
+
+#menu {
+  position: relative;
+  z-index: 20;
+  padding: 0px;
+  background-color: #fff;
+  min-height: 100%;
+  height: 100%;
+  max-height: 100%;
+}
+
+#menu li{
+  padding: 0.5rem 0.7rem;
+}
+
+#hi {
+  position: relative;
+  min-height: 100%;
+  height: 100%;
+  max-height: 100%;
+}
+
+#menu-row {
+  position: relative;
+  min-height: 100%;
+  height: 100%;
+}
+
+#menu-user {
+  top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 15;
+  min-width: 100%;
+  width: 100%;
+  min-height: 30%;
+  height: 30%;
+  background-color: #1ba39c;
+  color: #fff;
+}
+
+#menu-user-name{
+  padding: 1rem 0.5rem 0.5rem 0.5rem;
+  font-size: 1.2em
+}
+
+#menu-user-id{
+  padding: 0rem 0.5rem 0.5rem 0.5rem;
+  color: rgba(255, 255, 255, 0.658)
+}
+
+#menu-close{
+  padding-top: 0.9rem;
+  padding-right: 2rem;
+  font-size: 1.8em;
+  color: #137772c7
+}
+
+#menu-user-options{
+  position: absolute;
+  bottom:0;
+  margin-bottom: 10px;
+}
+
+#menu-user-options button{
+  margin-right: 10px;
+}
+
+#transaction-options-label {
+  padding: 1.3rem 0.3rem;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+#menu-options {
+  max-height: 100%;
+}
+
+.option-wrapper {
+  width: 100%;
+}

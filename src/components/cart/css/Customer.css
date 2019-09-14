@@ -2,9 +2,24 @@
   position: relative;
   min-height: 27%;
   height: 27%;
+  overflow:hidden;
 }
 
 #member {
   min-height: 85%;
   height: 85%;
+  overflow: hidden;
+}
+
+#member-button-container {
+  min-width: 80%;
+  width: 80%;
+  max-width: 80%;
+}
+
+.member-button {
+  margin-top: 10px;
+  min-width: 100%;
+  width: 100%;
+  max-width: 100%;
 }

@@ -25,17 +25,19 @@ function root_reducer(state = initial_state, action) {
       }
     });
   } else if (action.type === OPEN_MENU) {
-    return Object.assign({}, state, {
+    var newState = Object.assign({}, state, {
       menu: {
-        visible: true,
-        ...state.menu
+        ...state.menu,
+        visible: true
       }
     });
+    console.log(newState);
+    return newState;
   } else if (action.type === CLOSE_MENU) {
-    return Object.assign({}, state.menu, {
+    return Object.assign({}, state, {
       menu: {
-        visible: true,
-        ...state.menu
+        ...state.menu,
+        visible: false
       }
     });
   }

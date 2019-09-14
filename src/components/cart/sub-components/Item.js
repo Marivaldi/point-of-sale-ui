@@ -28,7 +28,7 @@ class Item extends Component {
             <div className="col-3 ellipsis">
               {this.state.total}
             </div>
-            <div className="col-1 ellipsis align-right">
+            <div className="col-1 ellipsis align-right clickable">
               <IoMdClose />
             </div>
         </div>
