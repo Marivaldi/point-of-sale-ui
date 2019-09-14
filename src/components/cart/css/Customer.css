@@ -1,0 +1,10 @@
+#member-container {
+  position: relative;
+  min-height: 27%;
+  height: 27%;
+}
+
+#member {
+  min-height: 85%;
+  height: 85%;
+}

@@ -1,0 +1,16 @@
+#product-search {
+  position: relative;
+  min-height: 13%;
+}
+
+#product-search .input-group{
+  width: 95%;
+}
+
+#product-search input, button{
+  font-size: 0.9em;
+}
+
+#product-search button{
+  font-size: 0.9em;
+}

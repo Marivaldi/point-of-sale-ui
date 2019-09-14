@@ -2,6 +2,7 @@ import React,  {Component} from 'react';
 import { MdMenu } from "react-icons/md";
 import { connect } from 'react-redux';
 import { open_menu } from '../../redux/actions/menu/menu_actions';
+import './Title.css';
 
 class Title extends Component {
   open_menu(){

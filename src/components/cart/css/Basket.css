@@ -1,3 +1,15 @@
+
+#cart {
+  padding-top: 20px;
+  min-height: 100%;
+  height: 100%;
+}
+
+#cart-aside {
+  padding: 0px 20px 0px 0px;
+  height: 100%;
+}
+
 .ellipsis {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -38,7 +50,7 @@ header {
 .basket-container {
   font-size: 0.8em;
   position: relative;
-  z-index: 4999;
+  z-index: 5;
   width: 100%;
   min-height: 100%;
 }

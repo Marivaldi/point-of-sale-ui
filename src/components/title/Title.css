@@ -1,0 +1,31 @@
+#title {
+  background-color: #fff;
+  padding: 10px 0px;
+  min-width: 100%;
+  min-height: 80px;
+}
+
+#title-text {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+#title h1{
+  font-size: 1.3em;
+}
+
+#title h2{
+  padding-top: 5px;
+  font-size: 1em;
+}
+
+.logo {
+  max-height:55px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.top-icon {
+  cursor: pointer;
+  font-size: 2.5em;
+  margin: 10px 0px 10px 10px;
+}

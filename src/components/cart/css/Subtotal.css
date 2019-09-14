@@ -1,0 +1,33 @@
+.subtotal-row{
+  position:relative;
+  margin: 0px 15px;
+  min-height: 20%;
+}
+
+.total-row{
+  position:relative;
+  margin: 0px 15px;
+  min-height: 25%;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 1.2em
+}
+
+.label {
+  float:left;
+}
+
+.value {
+  float:right;
+}
+
+.subtotal-button-row{
+  position: relative;
+  margin: 0px 40px;
+  min-height: 35%;
+}
+
+#subtotal-container {
+  position: relative;
+  height: 55%;
+}

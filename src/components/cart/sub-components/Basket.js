@@ -1,15 +1,11 @@
 import React,  {Component} from 'react';
 import { connect } from 'react-redux';
-import './Basket.css';
+import '../css/Basket.css';
 import Item from './Item';
 import AddItemButton from './AddItemButton';
 
 class Basket extends Component {
     render() {
-        if(!this.props.visible){
-          return null;
-        }
-
         return (
           <div className="col-md-8">
             <div className="basket-container full-height">
@@ -56,7 +52,7 @@ class Basket extends Component {
 
 const mapStateToProps = state => {
     return {
-      ...state.basket
+      items: state.cart.items
     };
 };
 

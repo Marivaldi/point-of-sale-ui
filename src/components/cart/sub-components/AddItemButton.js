@@ -1,6 +1,6 @@
 import React,  {Component} from 'react';
 import { connect } from 'react-redux';
-import { add_item_to_basket } from '../../redux/actions/basket/basket_actions';
+import { add_item_to_basket } from '../../../redux/actions/cart/cart_actions';
 
 class AddItemButton extends Component {
   constructor(props) {

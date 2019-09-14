@@ -1,5 +1,7 @@
 import React,  {Component} from 'react';
 import AddItemButton from './AddItemButton';
+import '../css/Subtotal.css';
+
 class Subtotal extends Component {
   render() { 
     return ( 
