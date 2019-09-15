@@ -2,8 +2,6 @@ import React,  {Component} from 'react';
 import { connect } from 'react-redux';
 import { MdClose } from "react-icons/md";
 import Blur from '../blur/Blur';
-import './css/Menu.css';
-import { dismiss_message } from '../../redux/actions/menu/menu_actions';
 
 class MessageWindow extends Component {
 
@@ -12,6 +10,10 @@ class MessageWindow extends Component {
   }
   
   render() {
+    if(!this.props.visible) {
+      return null;
+    }
+    
     return (
       <div>
           <Blur visible={this.props.visible}/>
@@ -22,7 +24,7 @@ class MessageWindow extends Component {
 
 function mapDispatchToProps(dispatch) {
   return {
-    close_message_window: () => dispatch(close_message_window())
+    //close_message_window: () => dispatch(close_message_window())
   };
 }
 

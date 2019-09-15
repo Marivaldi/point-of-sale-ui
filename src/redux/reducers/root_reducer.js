@@ -20,7 +20,7 @@ const initial_state = {
     items: []
   },
   message_window: {
-    visible: true,
+    visible: false,
     title: '',
     message: ''
 

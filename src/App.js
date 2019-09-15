@@ -5,6 +5,7 @@ import Title from './components/title/Title';
 import Cart from './components/cart/Cart';
 import Menu from './components/menu/Menu';
 import DataCollect from './components/forms/DataCollect';
+import MessageWindow from './components/message/MessageWindow';
 
 class App extends Component {
   render() { 
@@ -16,6 +17,7 @@ class App extends Component {
           <DataCollect/>
         </div>
         <Menu/>
+        <MessageWindow/>
       </div>
     );
   }
