@@ -4,16 +4,27 @@ import { OPEN_MENU, CLOSE_MENU } from "../actions/menu/menu_action_types";
 const initial_state = {
   title: '',
   caption: '',
+  valid_events: [],
+  form: {
+    visible: false,
+    inputs: []
+  },
   menu: {
     visible: false,
-    buttons: []
+    transaction_options: [],
+    application_options: []
   },
   cart: {
     visible: false,
     subtotal: '',
     items: []
+  },
+  message_window: {
+    visible: true,
+    title: '',
+    message: ''
+
   }
-  
 };
 
 function root_reducer(state = initial_state, action) {

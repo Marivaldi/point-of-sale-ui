@@ -3,7 +3,11 @@ import { connect } from 'react-redux';
 import './css/DataCollect.css';
 
 class DataCollect extends Component {
-  render() { 
+  render() {
+    if(!this.props.visible) {
+      return null;
+    }
+    
     return ( 
       <div id="data-collect-form" className={"row" + (this.props.blurred ? ' blur': '')}>
         <div className="col full-height scrollable">
@@ -38,7 +42,8 @@ class DataCollect extends Component {
 
 const mapStateToProps = state => {
   return {
-    blurred: state.menu.visible
+    blurred: state.menu.visible,
+    visible: state.form.visible
   };
 };
 

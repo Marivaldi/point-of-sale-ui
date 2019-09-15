@@ -1,6 +1,7 @@
 import React,  {Component} from 'react';
 import { connect } from 'react-redux';
 import { MdClose, MdLockOutline } from "react-icons/md";
+import Blur from '../blur/Blur';
 import './css/Menu.css';
 import { close_menu } from '../../redux/actions/menu/menu_actions';
 
@@ -88,13 +89,6 @@ class Menu extends Component {
       </div>
     );
   }
-}
-
-function Blur(props) {
-  if (props.visible) {
-    return <div className="cover"/>
-  }
-  return null;
 }
 
 function mapDispatchToProps(dispatch) {
