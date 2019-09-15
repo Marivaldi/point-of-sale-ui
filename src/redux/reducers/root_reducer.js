@@ -9,7 +9,7 @@ const initial_state = {
     buttons: []
   },
   cart: {
-    visible: true,
+    visible: false,
     subtotal: '',
     items: []
   }
