@@ -37,8 +37,8 @@ class Menu extends Component {
                       </div>
                     </div>
                     <div id="menu-user-options" >
-                      <button type="button" class="btn btn-outline-light">Sign Out</button>
-                      <button type="button" class="btn btn-outline-light"> <MdLockOutline/> Lock</button>
+                      <button type="button" className="btn btn-outline-light">Sign Out</button>
+                      <button type="button" className="btn btn-outline-light"> <MdLockOutline/> Lock</button>
                     </div>
                   </div>
                   <div id="menu-options">

@@ -4,10 +4,10 @@ class ProductSearch extends Component {
   render() { 
     return ( 
       <div id="product-search" className="card shadow">
-        <div class="input-group center">
+        <div className="input-group center">
           <input type="text" class="form-control" placeholder="Key an item code" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
-          <div class="input-group-append">
-            <button class="btn btn-outline-success" type="button">search</button>
+          <div className="input-group-append">
+            <button className="btn btn-outline-success" type="button">search</button>
           </div>
         </div>
       </div>
