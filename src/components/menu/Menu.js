@@ -28,12 +28,12 @@ class Menu extends Component {
                     </div>
                     <div id="menu-user-name" className="row">
                       <div className="col">
-                        Bob Zimmerman
+                        Test Associate
                       </div>
                     </div>
                     <div id="menu-user-id" className="row">
                       <div className="col">
-                        1111
+                        888
                       </div>
                     </div>
                     <div id="menu-user-options" >
@@ -42,7 +42,7 @@ class Menu extends Component {
                     </div>
                   </div>
                   <div id="menu-options">
-                    <div id="transaction-options-label">Transaction Options</div>
+                    <div id="transaction-options-label">Modify the Transaction</div>
                     <ul>
                       <li className="option-wrapper border-bottom">
                         <a className="option">Discount Menu</a>

@@ -12,7 +12,7 @@ class Title extends Component {
     return (
       <div id="title" className={"row shadow-lg border-bottom" + (this.props.blurred ? ' blur': '')}>
         <div className="col-1 hide-md">
-          <img className="logo" alt="logo" src="https://www.thefirstteephoenix.org/wp-content/uploads/sites/25/2016/07/ncr-logo.jpg"/>
+          Magic Point of Sale
         </div> 
         <div className="col-11 container row fill-md">
           <div id="title-text" className="col-8">
