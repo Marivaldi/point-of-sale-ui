@@ -15,7 +15,7 @@ const initial_state = {
     application_options: []
   },
   cart: {
-    visible: false,
+    visible: true,
     subtotal: '',
     items: []
   },
@@ -42,7 +42,6 @@ function root_reducer(state = initial_state, action) {
         visible: true
       }
     });
-    console.log(newState);
     return newState;
   } else if (action.type === CLOSE_MENU) {
     return Object.assign({}, state, {
