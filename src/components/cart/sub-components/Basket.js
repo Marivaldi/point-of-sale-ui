@@ -36,7 +36,9 @@ class Basket extends Component {
               <div id="subtotal" className="container">
                 <div className="row center-vertically full-width">
                   <div className="col">
-                    <span className="larger-text">Total: $150.00</span>
+                    <span className="larger-text">
+                      Total: ${ this.props.subtotal }.00
+                    </span>
                   </div>
                   <div className="col">
                     <AddItemButton/>
@@ -52,7 +54,8 @@ class Basket extends Component {
 
 const mapStateToProps = state => {
     return {
-      items: state.cart.items
+      items: state.cart.items,
+      subtotal: state.cart.subtotal
     };
 };
 

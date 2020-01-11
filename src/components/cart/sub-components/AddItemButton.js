@@ -9,12 +9,18 @@ class AddItemButton extends Component {
   }
 
   add_item(){
+    const descriptions = ["Shirt", "Shoes", "Beanie", "Sweater", "Jeans", "Socks"]
+    let unit_price = (Math.floor(Math.random() * Math.floor(10)));
+    let quantity = (Math.floor(Math.random() * Math.floor(10)));
+    let total = unit_price * quantity;
+    let description = descriptions[(Math.floor(Math.random() * Math.floor(6)))]
     this.props.add_item({
-      id: this.item_id,
-      description: "Water Trtmnt",
-      price: '$' + (Math.floor(Math.random() * Math.floor(10))) + '.00',
-      quantity: (Math.floor(Math.random() * Math.floor(10))),
-      total: "$300"
+      id: this.item_id + description + quantity + unit_price,
+      description: description,
+      price: '$' + unit_price + '.00',
+      quantity: quantity,
+      total: '$' + total + '.00',
+      true_total: total
     });
     this.item_id++;
   }
