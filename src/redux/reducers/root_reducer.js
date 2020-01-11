@@ -16,7 +16,7 @@ const initial_state = {
   },
   cart: {
     visible: true,
-    subtotal: '',
+    subtotal: 0,
     items: []
   },
   message_window: {
@@ -32,6 +32,7 @@ function root_reducer(state = initial_state, action) {
     return Object.assign({}, state, {
       cart: {
         ...state.cart,
+        subtotal: state.cart.subtotal + action.payload.true_total,
         items: [action.payload, ...state.cart.items]
       }
     });
