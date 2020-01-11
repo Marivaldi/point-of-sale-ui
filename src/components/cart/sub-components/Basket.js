@@ -12,7 +12,7 @@ class Basket extends Component {
               <div id="basket" className="card shadow scrollable">
                 <header className="container">
                      <div className="row">
-                            <div className="col-2 header-col ellipsis">
+                            <div className="col-2 header-col ml-2 ellipsis">
                             Item
                             </div>
                             <div className="col-3 header-col ellipsis">
